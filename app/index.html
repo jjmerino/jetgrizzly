@@ -26,12 +26,15 @@
           <li class="active"><a ng-href="#">Home</a></li>
           <li><a ng-href="#">About</a></li>
           <li><a ng-href="#">Contact</a></li>
+          <li><a ng-href="#timer">Timer Test</a></li>
         </ul>
         <h3 class="text-muted">jetgrizzly</h3>
       </div>
-
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
+        
+     
+      <div ng-include="'views/timer.html'"></div>
+      <!-- <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div> -->
+      
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
@@ -60,6 +63,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -77,6 +81,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/timer.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>
